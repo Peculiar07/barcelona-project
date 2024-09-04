@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./yes3_style.css">
+        <title>Are you a barcelona fan</title>
+    </head>
+    <body>
+        <div>
+            <h1 class="header_text">Pick One!!!!!!</h1>
+        </div>
+        <div class="choice_container">
+          <div class="choice">
+            <img src="https://www.fcbarcelona.com/fcbarcelona/photo/2023/06/01/a22d7a6b-15c2-4ef6-aeb8-bfe79df574f3/Bar-a-Store-Poble-Espanyol.JPG" alt="merch">
+            <div class="choice-content">
+                <h3>Be able to attend all barcelona matches for free and have all merch(No)</h3>
+            </div>
+         </div>
+           <div class="choice">
+            <img src="https://media.istockphoto.com/id/1224740698/vector/alnoe-falling-man-in-the-blue-sea.jpg?s=612x612&w=0&k=20&c=_zWPK5qO-Z-l_SjJFXiQrbzacc8a9kfAN-wbO4rOvTM=" alt="drowning">
+            <div class="choice-content">
+                <h3>Save me from drowning(Yes)</h3>
+            </div>
+           </div>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+        </div>
+        <script>
+            function nextPage() {
+                window.location.href="yes4.html"
+            }
+            function moveButton() {
+            var noButton = document.getElementById('noButton');
+            var x = Math.random() * (window.innerWidth - noButton.offsetWidth - 20);
+            var y = Math.random() * (window.innerHeight - noButton.offsetHeight - 20);
+            noButton.style.position = 'absolute';
+            noButton.style.left = x + 'px';
+            noButton.style.top = y + 'px';
+        }
+        </script>
+    </body>
+</html>

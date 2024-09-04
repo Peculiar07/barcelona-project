@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./yes_style.css">
+        <title>Are you a barcelona fan</title>
+    </head>
+    <body>
+        <div>
+            <h1 class="header_text">Are you sure youre a Barcelona Fan</h1>
+        </div>
+        <div class="image_container">
+            <img src="https://m.media-amazon.com/images/I/71866WPNrAL._AC_UF894,1000_QL80_.jpg" alt="barcelona football">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+        </div>
+        <script>
+            function nextPage() {
+                window.location.href="yes2.html"
+            }
+            function moveButton() {
+            var noButton = document.getElementById('noButton');
+            var x = Math.random() * (window.innerWidth - noButton.offsetWidth - 20);
+            var y = Math.random() * (window.innerHeight - noButton.offsetHeight - 20);
+            noButton.style.position = 'absolute';
+            noButton.style.left = x + 'px';
+            noButton.style.top = y + 'px';
+        }
+        </script>
+    </body>
+</html>

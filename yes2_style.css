@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    background-color: beige; /* Fixed color syntax */
+    margin: 0; /* Ensure no default margin is applied */
+}
+
+#noButton {
+    position: bottom;
+    transition: 0.5s;
+}
+
+#yesButton {
+    position: bottom;
+}
+
+.header_text {
+    font-family: '';
+    font-size: 40px;
+    font-weight: bold;
+    color: skyblue;
+    text-align: top;
+    margin: 20px ;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: row;
+    margin: 20px;
+}
+
+.btn {
+    background-color: white;
+    color: red;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px; /* Adjusted font size for readability */
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query syntax fixed */
+@media only screen and (max-width: 320px) and (max-height: 560px) {
+    body {
+        height: 100vh;
+    }
+
+    .header_text {
+        font-size: 20px;
+    }
+
+    img {
+        height: 60vh;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 736px) {
+    body {
+        height: 98vh;
+    }
+
+    .header_text {
+        font-size: 20px;
+    }
+
+    img {
+        height: 60vh;
+    }
+
+    .btn {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+}
